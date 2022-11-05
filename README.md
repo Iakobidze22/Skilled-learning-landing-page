@@ -1,2 +1,2 @@
-# Skilled-learning-landing-page
+# skilled-learning-landing-page
 Created with CodeSandbox

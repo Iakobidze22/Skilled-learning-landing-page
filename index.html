@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./favicon-32x32.png/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Skilled learning landing page</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    @media only screen and (max-width: 767px) {
+      
+    }
+    body {
+      border-radius: 0px;
+    }
+    .backgroundimage{
+        background-image: url(image-hero-mobile.png);
+        background-repeat: no-repeat;
+        background-position:  center;
+        background-size: 100%;
+        width: calc(100vw - 20px);
+        height: calc(100vw - 20px);
+        max-width: 500px;
+        max-height: 500px;
+        align-items: center;
+      }
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 5vw;
+      align-items: center;
+    }
+    .skilled {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 35px;
+      color: #13183F;
+      margin-top: 22px;
+      margin-left: 16px;
+    }
+    .getstartedbutton1{
+      width: 140px;
+      height: 48px;
+      border-radius: 28px;
+      background: #13183f;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+      font-weight: 400;
+      text-align: center;
+      padding: 6px;
+      font-family: 'Plus Jakarta Sans';
+      margin-top: 16px;
+      margin-right: 16px;
+    }
+    .main2{
+      display: flex;
+      flex-direction: column;
+      padding: 45px 5vw;
+      align-items: center;
+    }
+    .text1{
+      font-size: 40px;
+      color: #13183f;
+      font-weight: 800;
+      margin-left: 16px;
+      text-align: left;
+      line-height: 50px;
+      max-width: 355px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    .text2{
+      font-size: 16px;
+      margin-top: 26px;
+      color: #83869a;
+      font-weight: 500;
+      margin-left: 16px;
+      text-align: left;
+      line-height: 26px;
+      max-width: 355px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    .getstartedbutton2{
+      background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+      border-radius: 31.5px;
+      width: 167px;
+      margin-top: 24px;
+      height: 56px;
+      font-size: 16px;
+      margin-left: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: white;
+      font-family: 'Plus Jakarta Sans';
+      margin-bottom: 66px;
+    }
+    .main3 {
+      top: 800px;
+      border-radius: 0px;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .checkout {
+      font-family: "Plus Jakarta Sans";
+      max-width: 343px;
+      font-size: 24px;
+      color: white;
+      font-weight: 800;
+      text-align: center;
+      line-height: 32px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+      padding: 8px 45px;
+    }
+    .animationconteiner {
+      background: #ffffff;
+      box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+      border-radius: 10px;
+      height: 259px;
+      width: 343px;
+      margin-top: 30px;
+      
+    }
+    .animation {
+      margin-top: -24px;
+      margin-left: 28px;
+    }
+    .animationtext {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+      color: #13183f;
+      display: flex;
+      margin-left: 28px;
+      margin-top: 24px;
+    }
+    .contenttext2 {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #83869a;
+      display: flex;
+      margin-top: 16px;
+      margin-left: 28px;
+      margin-right: 29px;
+    }
+    .getstarted3 {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: #f74780;
+      display: flex;
+      margin-left: 28px;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+    .getstarted3:hover {
+      color: #FFA7C3;
+    }
+    .designconteiner {
+      background: #ffffff;
+      box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+      border-radius: 10px;
+      height: 259px;
+      width: 343px;
+      margin-top: 30px;
+    }
+    .designtext {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+      color: #13183f;
+      display: flex;
+      margin-left: 28px;
+      margin-top: 24px;
+    }
+    .designimage {
+      margin-top: -24px;
+      margin-left: 28px;
+    }
+    .designcontenttext {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #83869a;
+      margin-top: 16px;
+      margin-left: 28px;
+      margin-right: 29px;
+      display: flex;
+    }
+    .getstarteddesign {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: #f74780;
+      display: flex;
+      margin-top: 24px;
+      margin-left: 28px;
+      cursor: pointer;
+    }
+    .getstarteddesign:hover {
+      color: #FFA7C3;
+    }
+    .photographyconteiner {
+      height: 259px;
+      width: 343px;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+      margin-top: 30px;
+    }
+    .photographyimage {
+      margin-top: -24px;
+      margin-left: 28px;
+    }
+    .photographytext {
+      display: flex;
+      margin-top: 24px;
+      margin-left: 28px;
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+      color: #13183f;
+    }
+    .photographycontenttext {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #83869a;
+      display: flex;
+      margin-left: 28px;
+      margin-right: 29px;
+      margin-top: 16px;
+    }
+    .photographygetstarted {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: #f74780;
+      display: flex;
+      margin-left: 28px;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+    .photographygetstarted:hover {
+      color: #FFA7C3;
+    }
+    .cryptoconteiner {
+      height: 259px;
+      width: 343px;
+      background: #ffffff;
+      box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    .cryptoimage {
+      margin-top: -24px;
+      margin-left: 28px;
+    }
+    .cryptotext {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      display: flex;
+      margin-left: 28px;
+      margin-top: 24px;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+      color: #13183f;
+    }
+    .cryptocontenttext {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #83869a;
+      display: flex;
+      margin-left: 28px;
+      margin-right: 29px;
+      margin-top: 16px;
+    }
+    .cryptogetstarted {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: #f74780;
+      margin-left: 28px;
+      margin-top: 24px;
+      display: flex;
+      cursor: pointer;
+    }
+    .cryptogetstarted:hover {
+      color: #FFA7C3;
+    }
+    .businessconteiner {
+      height: 259px;
+      width: 343px;
+      background: #ffffff;
+      box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    .businessimage {
+      margin-top: -24px;
+      margin-left: 28px;
+    }
+    .businesstext {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+      color: #13183f;
+      display: flex;
+      margin-left: 28px;
+      margin-top: 24px;
+    }
+    .businesscontenttext {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #83869a;
+      display: flex;
+      margin-left: 28px;
+      margin-right: 29px;
+      margin-top: 16px;
+    }
+    .businessgetstarted {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: #f74780;
+      display: flex;
+      cursor: pointer;
+      margin-left: 28px;
+      margin-top: 24px;
+    }
+    .businessgetstarted:hover {
+      color: #FFA7C3;
+    }
+    .skilled2 {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 35px;
+      color: #FFFFFF;
+      margin-left: 16px;
+    }
+    .footer {
+      align-items: center;
+      font-weight: 800;
+      font-size: 28px;
+      height: 120px;
+      text-align: center;
+      line-height: 35px;
+      background-color: #13183f;
+      justify-content: space-between;
+      display: flex;
+    }
+    .getstartedbutton3 {
+      border: none;
+      font-family: 'Plus Jakarta Sans';
+      width: 140px;
+      height: 48px;
+      border-radius: 28px;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+      font-weight: 400;
+      text-align: center;
+      padding: 6px;
+      margin-right: 16px;
+      background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+    }
+     .getstartedbutton2:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+       }
+     .getstartedbutton3:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+       }
+     .getstartedbutton1:hover {
+        background-color: #666ca3;
+       }
+
+    @media only screen and (min-width: 768px) {
+      .skilled {
+        margin-top: 31px;
+        margin-left: 23px;
+      }
+      .getstartedbutton1{
+        margin-right: 24px;
+        margin-top: 24px;
+      }
+      .header{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+      }
+      .getstartedbutton1:hover {
+        background-color: #666ca3;
+      }
+      .text1 {
+        margin-left: 23px;
+        height: 101px;
+        width: 326px;
+      }
+      .text2 {
+        margin-left: 23px;
+        height: 78px;
+        width: 398px;
+      }
+      .getstartedbutton2 {
+        margin-left: 23px;
+      }
+      .backgroundimage {
+        background-image: url(image-hero-tablet.png);
+        background-size: 180%;
+        background-position: -7px -123px;
+        max-width: 350px;
+      }
+      .maintext {
+        flex-direction: column;
+        margin-top: 99px;
+      }
+      .main2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 0 0 5vw;
+        position: relative;
+        top: 30px;
+        margin-bottom: 30px;
+      }
+      .conteiner2 {
+        margin-left: 39px;
+        margin-top: 24px;
+        margin-right: 562px;
+      }
+      .checkout {
+        position: relative;
+        width: 343px;
+        height: 259px;
+        border-radius: 15px;
+        padding: 70px 46px;
+        justify-self: start;
+        margin: 0;
+        margin-top: 30px;
+      }
+      .main3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px 5vw;
+        row-gap: 36px;
+      }
+      .animationconteiner {
+        height: 259px;
+        width: 343px;
+        border-radius: 10px;
+        
+      }
+      .designconteiner {
+        height: 259px;
+        width: 343px;
+        border-radius: 10px;
+      }
+      .photographyconteiner {
+        height: 259px;
+        width: 343px;
+        border-radius: 10px;
+        
+      }
+      .cryptoconteiner {
+        height: 259px;
+        width: 343px;
+        border-radius: 10px;
+        
+      }
+      .businessconteiner {
+        height: 259px;
+        width: 343px;
+        border-radius: 10px;
+        margin-bottom: 0px;
+      }
+      .footer {
+        height: 120px;
+        border-radius: 0px;
+      }
+      .skilled2 {
+        margin-left: 40px;
+      }
+      .getstartedbutton3 {
+        margin-right: 39px;
+      }
+    }
+    @media only screen and (min-width: 1380px) {
+      .text1 {
+        height: 143px;
+        width: 457px;
+        margin-top: 60px;
+      }
+      .text2 {
+        height: 84px;
+        width: 445px;
+      }
+      .backgroundimage {
+        background-image: url(image-hero-desktop.png);
+        background-size: 127%;
+        background-position: 60px -144px;
+        max-width: 600px;
+      }
+      .maintext {
+        z-index: -1;
+      }
+      .getstartedbutton2 {
+        margin-top: 40px;
+      }
+    }
+  </style>
+  <body>
+    <header class="header">
+      <span class="skilled">
+        skilled
+      </span>
+      <button class="getstartedbutton1">
+          Get Started
+      </button>
+    </header>
+    <main class="main2">
+    <section class="maintext">
+      <div class="text1">
+          Maximize skill,
+          minimize budget
+      </div>
+      <div class="text2">
+          Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.
+      </div>
+      <button class="getstartedbutton2">
+        Get Started
+      </button>
+    </section>
+    <section class="backgroundimage">
+    </section>
+  </main>
+    </div>
+    <div class="main3">
+        <div class="checkout">
+          Check out our most popular courses!
+        </div>
+      <div class="animationconteiner">
+        <img src="./icon-animation.svg" class="animation" />
+        <span class="animationtext">
+          Animation
+        </span>
+        <span class="contenttext2">
+          Learn the latest animation techniques to create stunning motion design
+          and captivate your audience.
+        </span>
+        <span class="getstarted3">
+          Get Started
+        </span>
+      </div>
+      <div class="designconteiner">
+        <img src="./icon-design.svg" class="designimage" />
+        <span class="designtext">
+          Design
+        </span>
+        <span class="designcontenttext">
+          Create beautiful, usable interfaces to help shape the future of how
+          the web looks.
+        </span>
+        <span class="getstarteddesign">
+          Get Started
+        </span>
+      </div>
+      <div class="photographyconteiner">
+        <img src="./icon-photography.svg" class="photographyimage" />
+        <span class="photographytext">
+          Photography
+        </span>
+        <span class="photographycontenttext">
+          Explore critical fundamentals like lighting, composition, and focus to
+          capture exceptional photos.
+        </span>
+        <span class="photographygetstarted">
+          Get Started
+        </span>
+      </div>
+      <div class="cryptoconteiner">
+        <img src="./icon-crypto.svg" class="cryptoimage" />
+        <span class="cryptotext">
+          Crypto
+        </span>
+        <span class="cryptocontenttext">
+          All you need to know to get started investing in crypto. Go from
+          beginner to advanced with this 54 hour course.
+        </span>
+        <span class="cryptogetstarted">
+          Get Started
+        </span>
+      </div>
+      <div class="businessconteiner">
+        <img src="./icon-business.svg" class="businessimage" />
+        <span class="businesstext">
+          Business
+        </span>
+        <span class="businesscontenttext">
+          A step-by-step playbook to help you start, scale, and sustain your
+          business without outside investment.
+        </span>
+        <span class="businessgetstarted">
+          Get Started
+        </span>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="skilled2">
+        skilled
+      </span>
+        <button class="getstartedbutton3">
+          Get Started
+        </button>
+    </footer>
+  </body>
+</html>
